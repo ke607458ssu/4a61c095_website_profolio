@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap</title>
+    <link rel="icon shortcut" href="./img/favicon.ico">
+    <!-- Bootstrap官方網站 https://getbootstrap.com/ -->
+    <!-- 連結Bootstrap.min.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- TODO: 客製化Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <!-- 使用font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <!-- wow.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <!-- bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+    <!-- main js -->
+    <script src="./main.JS/main.js"></script>
+    <!-- 使用style.css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <!-- 使用Boostrap Navbar -->
+    <nav id="navbar" class="navbar fixed-top navbar-expand-sm bg-white">
+        <!-- logo -->
+        <a class="navbar-brand ml-5" href="">My Profolio</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-black" id="collapsibleNavId">
+            <ul class="navbar-nav mr-5">
+                <li class="nav-item pr-4">
+                    <a class="nav-link" href="#header">Home</a>
+                </li>
+                <li class="nav-item pr-4">
+                    <a class="nav-link" href="#introSection">About</a>
+                </li>
+                <li class="nav-item pr-4">
+                    <a class="nav-link" href="#featuresSection1">Profolio</a>
+                </li>
+                <li class="nav-item pr-4">
+                    <a class="nav-link" href="#gallerySection">Gallery</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- header -->
+    <header id="header" class="jumbotron bg-white">
+        <div class="container">
+            <div class="wow bounceInUp animate__animated animate__bounce">
+                <p class="myname">- 蘇柏瑞</p>
+                <p class="myclass">南臺科技大學創新產品設計系</p>
+            </div>
+        </div>
+        <div class="contact-link wow bounceInUp animate__animated animate__bounce">
+            <a href="" class="icon1"></a>
+            <a href="" class="icon2"></a>
+            <a href="" class="icon3"></a>
+        </div>
+    </header>
+    <!-- header end -->
+    <!-- introSection -->
+    <!-- TODO: 設定introSection 上下padding為5倍 -->
+    <section id="introSection">
+        <div class="container">
+            <div class="row justify-content-center py-5">
+                <div class="mt-3 pt-5">
+                     <!-- 設定使用者照片變圓型 -->
+                    <img class="rounded-circle" src="./img/圓形證件照.jpg" alt="user photo">
+                </div>
+                <div class="ml-5 col-sm-6 mt-5 pt-5">
+                    <p class="aboutme wow bounceInUp animate__animated animate__bounce">- About me</p>
+                    <p class="introme wow bounceInUp animate__animated animate__bounce">嗨！我是蘇柏瑞，就讀南台科技大學創新產品設計系，雖然就讀創新產品設計系，但在學習過程
+                                        中接觸到介面與互動設計領域後對於介面與互動設計深感興趣，並開始投入學習此方面各項技能
+                                        ，希望未來能夠成為介面設計師。</p>
+                </div>
+            </div>
+            <div>
+                <p class="about-title">- My Skills</p>
+            </div>
+            <div class="row ml-5">
+                <div class="col-md-3 py-5 px-0">
+                    <div class="intro-box">
+                        <img class="chart mt-3" src="./img/uiux_75.svg" alt="uiux">
+                        <h5 class="title-uiux mt-2">UI/UX設計</h5>
+                    </div>
+                </div>
+                <div class="col-md-3 py-5 px-0">
+                    <div class="intro-box">
+                        <img class="chart mt-3" src="./img/web_50.svg" alt="web">
+                        <h5 class="title-web mt-2">網頁設計</h5>
+                    </div>   
+                </div>
+                <div class="col-md-3 py-5 px-0">
+                    <div class="intro-box">
+                        <img class="chart mt-3" src="./img/uiux_75.svg" alt="pd">
+                        <h5 class="title-pd mt-2">產品設計</h5>
+                    </div>
+                </div>
+                <div class="col-md-3  py-5 px-0">
+                    <div class="intro-box">
+                        <img class="chart mt-3" src="./img/uiux_75.svg" alt="3D">
+                        <h5 class="title-3d mt-2">3D建模</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="text-center col-md-2 col-sm-4 col-xs-6 py-5">
+                    <img src="./img/ico/ps.svg" alt="" class="skill1">
+                    <h5 class="skill-name mt-3">Adobe Photoshop</h5>
+                </div>
+                <div class="text-center col-md-2 col-sm-4 col-xs-6  py-5">
+                    <img src="./img/ico/ai.svg" alt="" class="skill1">
+                    <h5 class="skill-name mt-3">Adobe Illustrator</h5>
+                </div>
+                <div class="text-center col-md-2 col-sm-4 col-xs-6  py-5">
+                    <img src="./img/ico/pr.svg" alt="" class="skill1">
+                    <h5 class="skill-name mt-3">Adobe Premiere</h5>
+                </div>
+                <div class="text-center col-md-2 col-sm-4 col-xs-6  py-5">
+                    <img src="./img/ico/xd.svg" alt="" class="skill1">
+                    <h5 class="skill-name mt-3">Adobe Xd</h5>
+                </div>
+                <div class="text-center col-md-2 col-sm-4 col-xs-6  py-5">
+                    <img src="./img/ico/rhino.svg" alt="" class="skill1">
+                    <h5 class="skill-name mt-3">Rhinoceros</h5>
+                </div>
+                <div class="text-center col-md-2 col-sm-4 col-xs-6  py-5">
+                   <img src="./img/ico/sketch.svg" alt="" class="skill1">
+                    <h5 class="skill-name mt-3">Sketch</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- introSection end -->
+    <!-- featuresSection -->
+    <section id="featuresSection1" class="py-5 text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="logoK mt-5 pt-5">
+                    <img class="mt-4" src="./img/Logo/K.svg" alt="user photo">
+                </div>
+                <div class="ml-5 col-sm-6 mt-5 pt-5">
+                    <div class="wow bounceInUp animate__animated animate__bounce">
+                        <p class="title-logoK">01 &nbsp; 藍芽智慧鎖 研究與製作</p>
+                        <p class="subtitle-logoK">透過資料、相關產品UI蒐集，藉由分析找出各產品介面
+                                    特色、使用性、學習成本等等各項因素，並且加以改良，作為
+                                    第一步設計wireframe的依據。<br><br>並且在上述的資料分析與蒐集中整理出我們未來在設計上共同
+                遵守的五點設計原則：</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center px-4">
+                <div class="text-center col-md-2 col-sm-4 col-xs-6 py-5">
+                    <img src="./img/icon/k_01.svg" alt="" class="skill">
+                    <h5 class="logoK-name mt-3">合理用色</h5>
+                </div>
+                <div class="text-center col-md-2 col-sm-4 col-xs-6  py-5">
+                    <img src="./img/icon/k_02.svg" alt="" class="skill">
+                    <h5 class="logoK-name mt-3">直觀敘述</h5>
+                </div>
+                <div class="text-center col-md-2 col-sm-4 col-xs-6  py-5">
+                    <img src="./img/icon/k_03.svg" alt="" class="skill">
+                    <h5 class="logoK-name mt-3">清楚排版</h5>
+                </div>
+                <div class="text-center col-md-2 col-sm-4 col-xs-6  py-5">
+                    <img src="./img/icon/k_04.svg" alt="" class="skill">
+                    <h5 class="logoK-name mt-3">明確回饋</h5>
+                </div>
+                <div class="text-center col-md-2 col-sm-4 col-xs-6  py-5">
+                    <img src="./img/icon/k_05.svg" alt="" class="skill">
+                    <h5 class="logoK-name mt-3">使用頻率</h5>
+                </div>
+            </div>
+            <div class="row px-5 mx-5">
+                <p class="dc-logoK">易用性測試上我們訂下完整的測試要件包含受測者篩選、受測
+                者基本資料調查、場域與設備、使用者任務情境以及利用SUS
+                系統量表作為分析依據，統整出錯誤後再進一步設計。</p>
+            </div>
+            <div class="path">
+                <img src="./img/path.svg" alt="">
+            </div>
+            <div class="row justify-content-center">
+                <div class="logoKs mt-4 pt-3">
+                    <img class="mt-2" src="./img/Logo/Ks.svg" alt="logoK">
+                </div>
+                <div class="ml-5 col-sm-6 mt-4 pt-3">
+                    <p class="title-logoK">Logo設計</p>
+                    <p class="subtitle-logoK">由藍牙智慧鎖發想，縮寫英文iKey，圓角設計帶來安穩和親和感。</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="logoKs mt-5 pt-5">
+                    <img class="mt-2" src="./img/icons.svg" alt="logoK">
+                </div>
+                <div class="ml-5 col-sm-6 mt-5 pt-5">
+                    <p class="title-logoK">Icon設計</p>
+                    <p class="subtitle-logoK">以圓角為統一設計元素，依照使用者測試中易用性較容易識別之條件設計。</p>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-3">
+                <div class="logoKs mt-5 pt-5">
+                    <img class="mt-2" src="./img/colors/kcolors.svg" alt="logoK">
+                </div>
+                <div class="ml-5 col-sm-6 mt-5 pt-5">
+                    <p class="title-logoK">用色挑選</p>
+                    <p class="subtitle-logoK">藍色給人可靠、智慧的感覺；綠色有准許行動之意，給人便捷快速的感覺，剛好符合智慧所應有功能特性。</p>
+                </div>
+            </div>
+            <div class="path">
+                <img src="./img/path.svg" alt="">
+            </div>
+            <div class="row px-5 mx-5 mt-3">
+                <p class="dc-logoK mt-3">透過研究、測試、分析，通過易用性分析，我們將線框圖測試中使用者較易出錯的步驟、不易識別的icon以及不合理的擺放位置都修正。而在這項作業中，不只學習到介面設計與流程，還學習到利用測試系統量表使自己的設計更具說服力、更專業。</p>
+            </div>
+        </div>
+    </section>
+    <!-- featuresSection end -->
+    <!-- reviewsSection -->
+    <section id="reviewsSection" class="reviewsBG">
+        <!-- 第一頁 內容 -->
+        <div id="user" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- item 最多5個 最好奇數 圖片高度最好一樣 tiny.png減壓縮 -->
+                <!-- 第一頁 內容 -->
+                <div class="user carousel-item active">
+                    <div class="row justify-content-center">
+                        <div>
+                            <img class="carousel-bg" src="./img/bg/木馬01.svg" alt="user photo">
+                        </div>
+                    </div>
+                </div>
+                <!-- 第一頁 內容 結束 -->
+                <!-- 第二頁 內容 -->
+                <div class="user carousel-item">
+                    <div class="row justify-content-center">
+                        <div>
+                            <img class="carousel-bg" src="./img/bg/木馬02.svg" alt="user photo">
+                        </div>
+                    </div>
+                </div>
+                <!-- 第二頁 內容 結束 -->
+                <a class="carousel-control-prev" href="#user" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#user" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only ">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- reviewsSection end -->
+     <!-- featuresSection2 -->
+    <section id="featuresSection2" class="py-5 text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="logoOf mt-5 pt-5">
+                    <img class="mt-4" src="./img/Logo/old friends.svg" alt="user photo">
+                </div>
+                <div class="ml-5 col-sm-6 mt-5 pt-5">
+                    <div class="wow bounceInUp animate__animated animate__bounce">
+                        <p class="title-logoK">02 &nbsp; 老遇-給長者的交友軟體</p>
+                        <p class="subtitle-logoK">美國密西根大學研究顯示，獨居長者高達六成因缺乏陪伴而感到孤單，缺少人際互動，而造成生心理個層面許多負面影響。根據內政部「老人生活狀況調查」比較二十年間的變化，老人獨居以及僅和配偶居住的比例從25%上升至40%；老人和子女共居的情形也不斷下滑，從70%下降至57%。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center px-4">
+                <div class="text-center col-md-2 col-sm-4 col-xs-6 py-5">
+                    <img src="./img/icon/k_01.svg" alt="" class="skill">
+                    <h5 class="logoK-name mt-3">合理用色</h5>
+                </div>
+                <div class="text-center col-md-2 col-sm-4 col-xs-6  py-5">
+                    <img src="./img/icon/k_02.svg" alt="" class="skill">
+                    <h5 class="logoK-name mt-3">直觀敘述</h5>
+                </div>
+                <div class="text-center col-md-2 col-sm-4 col-xs-6  py-5">
+                    <img src="./img/icon/k_03.svg" alt="" class="skill">
+                    <h5 class="logoK-name mt-3">清楚排版</h5>
+                </div>
+                <div class="text-center col-md-2 col-sm-4 col-xs-6  py-5">
+                    <img src="./img/icon/k_04.svg" alt="" class="skill">
+                    <h5 class="logoK-name mt-3">明確回饋</h5>
+                </div>
+                <div class="text-center col-md-2 col-sm-4 col-xs-6  py-5">
+                    <img src="./img/icon/k_05.svg" alt="" class="skill">
+                    <h5 class="logoK-name mt-3">使用頻率</h5>
+                </div>
+            </div>
+            <div class="row px-5 mx-5">
+                <p class="dc-logoK">我們研究發現市面上現有老人交友APP只是單純地給予交友平台，沒有促使他們積極使用的誘因，｢老遇｣進而創新功能誘發使用者達成以上的條件使長者們更積極使用。</p>
+            </div>
+            <div class="path">
+                <img src="./img/path.svg" alt="">
+            </div>
+            <div class="row justify-content-center">
+                <div class="logoOf mt-4 pt-3">
+                    <img class="mt-2" src="./img/Logo/Of.svg" alt="logoOf">
+                </div>
+                <div class="ml-5 col-sm-6 mt-4 pt-3">
+                    <p class="title-logoK">Logo設計</p>
+                    <p class="subtitle-logoK">由老年交友為發想，此Logo設計想表達能透過我們的交友軟體，讓長者們找到幸福。</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="logoKs mt-5 pt-5">
+                    <img class="mt-2" src="./img/icon2.svg" alt="logoOf">
+                </div>
+                <div class="ml-5 col-sm-6 mt-5 pt-5">
+                    <p class="title-logoK">Icon設計</p>
+                    <p class="subtitle-logoK">Icon的選用主要的原則為線條形狀簡單、易懂，使長者在使用上較易識別。</p>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-3">
+                <div class="logoKs mt-5 pt-5">
+                    <img class="mt-2" src="./img/colors/ofcolors.svg" alt="logoK">
+                </div>
+                <div class="ml-5 col-sm-6 mt-5 pt-5">
+                    <p class="title-logoK">用色挑選</p>
+                    <p class="subtitle-logoK">紅色有勇氣、能量、愛、熱情的寓意；而白色給人帶來高雅、青春、健康的正面寓意，符合我們的設計目的。</p>
+                </div>
+            </div>
+            <div class="row px-5 mx-5 pt-5">
+                <p class="dc-logoK">在色彩企劃分析中發現，長者通常有白內障的問題導致他們眼中的藍色被過濾掉，因此不要使用偏藍色系顏色，主要用紅、橙、黃色系。</p>
+            </div>
+            <div class="path">
+                <img src="./img/path.svg" alt="">
+            </div>
+            <div class="row px-5 mx-5 mt-3">
+                <p class="dc-logoK mt-3">透過使用者訪談、測試進行原型製作與改良，希望為長者的生活帶來新樂趣。以下為我們團隊所製作主要功能頁面簡介：</p>
+            </div>
+        </div>
+    </section>
+     <!-- featuresSection2 end -->
+    <section>
+    </section>
+     <!-- reviewsSection2 -->
+    <section id="reviewsSection" class="reviewsBG2">
+        <!-- 第一頁 內容 -->
+        <div id="user2" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <!-- item 最多5個 最好奇數 圖片高度最好一樣 tiny.png減壓縮 -->
+                <!-- 第一頁 內容 -->
+                <div class="user2 carousel-item active">
+                    <div class="row justify-content-center">
+                        <div>
+                            <img class="carousel-bg" src="./img/bg/Of 01.svg" alt="user photo">
+                        </div>
+                    </div>
+                </div>
+                <!-- 第一頁 內容 結束 -->
+                <!-- 第二頁 內容 -->
+                <div class="user2 carousel-item">
+                    <div class="row justify-content-center">
+                        <div>
+                            <img class="carousel-bg" src="./img/bg/Of 02.svg" alt="user photo">
+                        </div>
+                    </div>
+                </div>
+                <div class="user2 carousel-item">
+                    <div class="row justify-content-center">
+                        <div>
+                            <img class="carousel-bg" src="./img/bg/Of 03.svg" alt="user photo">
+                        </div>
+                    </div>
+                </div>
+                <!-- 第二頁 內容 結束 -->
+                <a class="carousel-control-prev" href="#user2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#user2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only ">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- reviewsSection2 end -->
+    
+    <!-- gallerySection -->
+    <section id="gallerySection">
+        <div class="container-fluid">
+            <div class="otherbg row justify-content-center px-5 py-5">
+                <div class="logoOf mt-5 pt-5">
+                    <img class="mt-4" src="./img/Logo/architecture.svg" alt="user photo">
+                </div>
+                <div class="ml-5 col-sm-6 mt-5 py-5 mb-5">
+                    <div class="wow bounceInUp animate__animated animate__bounce">
+                        <p class="title-logoK">03 &nbsp; 產品相關課程設計</p>
+                        <p class="subtitle-logoK">以下為在學校課程中的各項設計，有基礎麥克筆練習、產品設計、訓練美感的面具設計、Logo設計......等等。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="galleryImage1" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">3D腳踏車建模</div>
+                </div>
+                <div id="galleryImage2" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">新型手動果汁機設計</div>
+                </div>
+                <div id="galleryImage3" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">電競延長線設計</div>
+                </div>
+                <div id="galleryImage4" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">麥克筆練習</div>
+                </div>
+                <div id="galleryImage5" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">3D腳踏車建模</div>
+                </div>
+                <div id="galleryImage6" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">智能衣設計</div>
+                </div>
+                <div id="galleryImage7" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">面具設計</div>
+                </div>
+                <div id="galleryImage8" class="col-md-3 col-sm-6">
+                    <div class="gallery-text">Logo設計</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gallerySection end -->
+    
+<!-- footer -->
+    <footer id="footer" class="text-white bg-white pt-5">
+        <div class="container">
+            <div>
+                <p class="about-title pt-3">- Contact us</p>
+            </div>
+            <div class="row bg-white justify-content-center mb-5 mt-3">
+                <div class="contact-info">
+                    <div class="card">
+                        <i class="card-icon far fa-envelope"></i>
+                        <p>4a61c095<br>@stust.edu.tw</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="card-icon fas fa-phone"></i>
+                        <p>+000000000000</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="card-icon fas fa-map-marker-alt"></i>
+                        <p>Tainan,Taiwan</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="card-icon fab fa-facebook-f"></i>
+                        <p>Kevin Su</p>
+                    </div>
+
+                    <div class="card">
+                        <i class="card-icon fab fa-instagram"></i>
+                        <p>@ke607458ssu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <iframe class="" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14687.816690805874!2d120.2264886!3d23.0254548!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3bfd449f1e46ffef!2z5Y2X6Ie656eR5oqA5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1594048523265!5m2!1szh-TW!2stw" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="footer-end">
+            <p class="copy-right text-center">&copy; Copy right 2020</p>
+        </div>
+    </footer>
+    
+    <!-- footer end -->
+    <!-- TODO: 設定置底返回按鈕 返回按鈕滾動動畫 -->
+    <button id="goBackBtn" href="#header" class="">
+        <i class="fas fa-chevron-up text-white"></i>
+    </button>
+
+    <!-- jquery.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+        $("#gotop").click(function () {
+            jQuery("html,body").animate({
+                scrollTop: 0
+            }, 1000);
+        });
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 300) {
+                $('#gotop').fadeIn("fast");
+            } else {
+                $('#gotop').stop().fadeOut("fast");
+            }
+        });
+    </script>
+    <!-- popper.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <!-- bootstrap.min.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <!-- 連結網頁主程式 -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

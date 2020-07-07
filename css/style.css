@@ -1,0 +1,597 @@
+/*=============================================
+=                  General                    =
+=============================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+button:focus {
+    outline: none;
+}
+.path {
+    padding-left: 150px;
+    padding-top: 30px;
+}
+
+/*=============================================
+=                  Navbar                     =
+=============================================*/
+
+.navbar {
+    box-shadow: 0 3px 18px rgba(0, 0, 0, .11);
+    height: 80px;
+}
+
+#collapsibleNavId {
+    position: absolute;
+    right: 0;
+}
+.navbar-brand {
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(78, 78, 78);
+}
+.nav-link {
+    color: rgb(78, 78, 78);
+}
+.navbar-brand:hover,
+.nav-link:hover {
+    color: lightseagreen;
+}
+
+
+/*=============================================
+=                  Header                     =
+=============================================*/
+/* TODO: 加入背景圖片 */
+/* header有id， */
+#header {
+    border-radius: 0px;
+    margin-bottom: 0px;
+    background-image: url('../img/bg/bg01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* 背景固定在後方 */
+    background-attachment: fixed;
+    height: 900px;
+    padding: 100px 0;
+    position: relative;
+    z-index: 2;
+}
+
+#header:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 5;
+}
+
+/* z-index 數字越大 圖層越前面 */
+#header>.container {
+    position: relative;
+    z-index: 8;
+    top: 250px;
+}
+.myname {
+    font-weight: bolder;
+    font-size: 60px;
+    color: lightseagreen;
+}
+.myclass {
+    color: rgb(78, 78, 78);
+}
+
+.contact-link {
+    position: relative;
+}
+.contact-link>.icon1 {
+    position: absolute;
+    background-image: url(../img/FB.svg);
+    height: 20px;
+    width: 20px;
+    top: 470px;
+    left: 90px;
+}
+.contact-link>.icon2 {
+    position: absolute;
+    background-image: url(../img/IG.svg);
+    height: 20px;
+    width: 20px;
+    top: 470px;
+    left: 130px;
+}
+.contact-link>.icon3 {
+    position: absolute;
+    background-image: url(../img/email.svg);
+    height: 20px;
+    width: 20px;
+    top: 470px;
+    left: 170px;
+}
+.icon1:hover {
+    position: absolute;
+    background-image: url(../img/FB_g.svg);
+    height: 20px;
+    width: 20px;
+    top: 470px;
+    left: 90px;
+}
+.icon2:hover {
+    position: absolute;
+    background-image: url(../img/IG_g.svg);
+    height: 20px;
+    width: 20px;
+    top: 470px;
+    left: 130px;
+}
+.icon3:hover {
+    position: absolute;
+    background-color: lightseagreen;
+    height: 20px;
+    width: 20px;
+    top: 470px;
+    left: 170px;
+}
+
+/*=============================================
+=                  Intro                      =
+=============================================*/
+.about-title {
+    font-weight: bolder;
+    color: lightseagreen;
+    font-size: 35px;
+    padding-top: 70px;
+    padding-left: 420px;
+    margin: 0px;
+}
+.rounded-circle {
+    width: 200px;
+    height: 200px;
+}
+.aboutme {
+    font-weight: bolder;
+    color: lightseagreen;
+    font-size: 35px;
+}
+.introme {
+    color: rgb(78, 78, 78);
+    line-height: 28px;
+    text-align:center;
+}
+.title-uiux,
+.title-web,
+.title-pd,
+.title-3d {
+    color: rgb(78, 78, 78);
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+}
+.chart {
+    display: inline-block;
+    padding-left:8px;
+    padding-bottom: 30px;
+}
+.skill-name {
+    color: rgb(78, 78, 78);
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+}
+.intro-box {
+    width: 210px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    transition: all .5s ease-out;
+    padding: 15px 15px;
+    text-align: center;
+}
+
+.intro-box:hover {
+    background: white;
+    box-shadow: 5px 5px 22px rgba(122, 122, 122, 0.226);
+}
+.intro-box:hover>.chart {
+    transform: scale(1.1);
+}
+/*=============================================
+=                  Features                   =
+=============================================*/
+#featuresSection1 {
+    background-color: rgb(44, 121, 182);
+    position: relative;
+}
+.about-title2 {
+    font-weight: bolder;
+    color: white;
+    font-size: 35px;
+    padding-top: 30px;
+    margin: 0px;
+    text-align: center;
+}
+.title-logoK {
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    padding-left: 20px;
+}
+.subtitle-logoK {
+    color: rgb(255, 255, 255);
+    line-height: 30px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.logoK-name {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: lighter;
+    text-align: center;
+}
+.logoKdiscrebe01 {
+    padding-left: 30px;
+}
+.dc-logoK {
+    color: rgb(255, 255, 255);
+    line-height: 30px;
+    text-align: left;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+.bg-logoK {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.skill:hover {
+    height: 52px;
+    width: 52px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(51, 51, 51, 0.493);;
+}
+/*=============================================
+=                  Reviews                    =
+=============================================*/
+.reviewsBG {
+    background-color: rgb(44, 120, 181);
+    padding-bottom: 80px;
+}
+.carousel-bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background: no-repeat;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon { 
+    height: 0px;
+    width: 0px
+}
+
+.carousel-control-next-icon:after
+{
+    content: '▶';
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    padding-left: 3px;
+}
+
+.carousel-control-prev-icon:after {
+    content: '◀';
+    font-size: 40px;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    padding-right: 3px;
+}
+
+#featuresSection2 {
+    background-color: rgb(190, 61, 57);
+    position: relative;
+}
+.reviewsBG2 {
+    background-color: rgb(190, 61, 57);
+    padding-bottom: 80px;
+}
+/*=============================================
+=                  Gallery                    =
+=============================================*/
+
+/* TODO: 設定Hover特效 */
+
+[id^='galleryImage'] {
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    filter: grayscale(100%);
+    transition: all .5s ease;
+}
+
+[id^='galleryImage']>.gallery-text {
+    color: rgba(255, 255, 255, 0);
+    font-weight: 700;
+    text-shadow: 0 8px 10px rgba(0, 0, 0, 0);
+    text-align: center;
+    transition: all .5s ease;
+}
+
+[id^='galleryImage']:hover {
+    filter: grayscale(0%);
+}
+
+[id^='galleryImage']:hover>.gallery-text {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 8px 10px rgba(0, 0, 0, 0.295);
+    text-align: center;
+    opacity: 1;
+    font-size: 22px;
+}
+
+/* 放入背景圖片 */
+
+#galleryImage1 {
+    background-image: url('../img/photo/photo_01.jpg');
+}
+
+#galleryImage2 {
+    background-image: url('../img/photo/photo_02.jpg');
+}
+
+#galleryImage3 {
+    background-image: url('../img/photo/photo_03.jpg');
+}
+
+#galleryImage4 {
+    background-image: url('../img/photo/photo_04.jpg');
+}
+
+#galleryImage5 {
+    background-image: url('../img/photo/photo_05.jpg');
+}
+
+#galleryImage6 {
+    background-image: url('../img/photo/photo_06.jpg');
+}
+
+#galleryImage7 {
+    background-image: url('../img/photo/photo_07.jpg');
+}
+
+#galleryImage8 {
+    background-image: url('../img/photo/photo_08.jpg');
+}
+.gallery-end {
+    background-color: rgb(78, 78, 78);
+    height: 50px;
+}
+/*=============================================
+=                  Start Now                  =
+=============================================*/
+.modalbtn {
+    background-color: rgb(78, 78, 78);
+    color: white;
+    outline: none;
+    border: none;
+}
+.modalbtn:hover {
+    background-color: lightseagreen;
+    color: white;
+    outline: none;
+    border: none;
+}
+.modal-title {
+    color: rgb(78, 78, 78);
+}
+.modalname {
+    color: lightseagreen;
+}
+.mfcbtn {
+    background-color: rgb(78, 78, 78);
+}
+.mfsbtn {
+    background-color: lightseagreen;
+}
+.mfcbtn,
+.mfsbtn {
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    width: 60px;
+}
+.otherbg {
+    background-color: rgb(131, 131, 131);
+    padding-bottom: 50px;
+}
+.othertitle {
+    font-weight: bolder;
+    color: white;
+    font-size: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0px;
+    text-align: center;
+}
+/*=============================================
+=                   Footer                    =
+=============================================*/
+footer {
+    background-color: rgb(78, 78, 78);
+    height: 300px;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-end p {
+    background-color: rgb(78, 78, 78);
+    font-size: 8px;
+    margin: 0;
+    height: 30px;
+}
+.copy-right {
+    line-height: 30px;
+}
+
+#goBackBtn {
+    background-color: lightseagreen;
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+    border-radius: 50%;
+}
+.footerbg {
+    background-color: rgb(78, 78, 78);
+}
+
+.footer-list {
+    display: inline-block;
+    flex-direction: row;
+    
+}
+.contact-info{
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+
+.card{
+  padding: 0 20px;
+  margin: 0 10px;
+  width: 150px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+}
+
+.card-icon{
+  font-size: 28px;
+  background: lightseagreen;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+
+.card:hover .card-icon{
+  background: none;
+  color: lightseagreen;
+  transform: scale(1.6);
+}
+
+.card p{
+    color: rgb(78, 78, 78);
+    margin-top: 20px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    max-height: 0;
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.card:hover p{
+  max-height: 40px;
+  opacity: 1;
+}
+
+
+@media screen and (max-width:800px) {
+  .contact-info{
+    flex-direction: column;
+  }
+  .card{
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+  }
+}
+/*=============================================
+=                   AD-BOX                    =
+=============================================*/
+
+.ad-box {
+    width: 300px;
+    position: fixed;
+    right: -275px;
+    bottom: 80px;
+    z-index: 100;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    display: flex;
+    box-shadow: 0px 20px 15px rgba(0, 0, 0, 0.2);
+    transition: all .3s ease;
+}
+
+.ad-box.active {
+    right: 0px;
+}
+
+.left-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid #ddd;
+}
+
+.ad-toggle-btn {
+    width: 25px;
+    border: none;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+}
+
+.ad-toggle-btn>i {
+    transform: rotateZ(90deg);
+}
+
+.ad-toggle-btn:hover {
+    color: #666;
+}
+
+.right-part {
+    padding: 10px;
+}
+
+.right-part>p {
+    margin-bottom: 0;
+}

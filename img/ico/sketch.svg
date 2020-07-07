@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="49px" height="43px" viewBox="0 0 49 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico/sketch</title>
+    <defs>
+        <filter id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.070588 0 0 0 0 0.415686 0 0 0 0 0.396078 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ico/sketch">
+            <g filter="url(#filter-1)" id="diamond">
+                <g>
+                    <polygon id="Path" fill="#000000" fill-rule="nonzero" points="33 12 29.0594516 0 20.9170651 0 17 12"></polygon>
+                    <polygon id="Path" fill="#000000" fill-rule="nonzero" points="9.16783387 1.24344979e-15 0 12 13.8817674 12 18 0"></polygon>
+                    <polygon id="Path" fill="#000000" fill-rule="nonzero" points="49 12 39.8469993 0 31 0 35.1364282 12"></polygon>
+                    <polygon id="Path" fill="#000000" fill-rule="nonzero" points="36.233393 15 28 41 49 15"></polygon>
+                    <polygon id="Path" fill="#000000" fill-rule="nonzero" points="25.0619394 43 34 15 16 15"></polygon>
+                    <polygon id="Path" fill="#000000" fill-rule="nonzero" points="0 15 22 41 12.7638486 15.0566064"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
